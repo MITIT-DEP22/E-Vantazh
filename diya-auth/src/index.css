@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'e-Ukraine';
+  src: url('./fonts/e-Ukraine-UltraLight.ttf') format('truetype');
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "e-Ukraine", monospace;
+  font-weight: initial;
+}
+
+body, html, #root {
+  width: 100%;
+}
+
+body {
+  height: 100vh;
+}
+

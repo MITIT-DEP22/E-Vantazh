@@ -1,0 +1,46 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://${POSTGRES_HOST}:${POSTGRES_PORT}/${POSTGRES_NAME}
+    username: ${POSTGRES_USERNAME}
+    password: ${POSTGRES_PASSWORD}
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    generate-ddl: true
+  mail:
+    host: ${EMAIL_HOST}
+    username: ${EMAIL_USERNAME}
+    password: ${EMAIL_PASSWORD}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    enabled: true
+
+application:
+  security:
+    jwt:
+      secret-key: ${JWT_SECRET}
+      expiration: ${JWT_ACCESS_EXPIRATION}
+      refresh-token:
+        expiration: ${JWT_REFRESH_EXPIRATION}
+
+server:
+  host: ${SERVER_HOST}
+  port: ${SERVER_PORT}
+  ssl:
+    key-password: ${SSL_PASSWORD}
+    key-store-type: PKCS12
+    key-store: ${SSL_PATH}
+    key-store-password: ${SSL_PASSWORD}
+
+dia:
+  url: ${DIA_API_URL}
+  acquirer_token: ${ACQUIRER_TOKEN}
+  auth_acquirer_token: ${AUTH_ACQUIRER_TOKEN}

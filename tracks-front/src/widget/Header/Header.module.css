@@ -1,0 +1,13 @@
+.container {
+    background: url("../../assets/images/header-bg.jpg") center;
+    background-size: cover;
+}
+
+.homePage {
+    width: 100%;
+    background: transparent;
+}
+
+.brand {
+    margin-left: 20px;
+}

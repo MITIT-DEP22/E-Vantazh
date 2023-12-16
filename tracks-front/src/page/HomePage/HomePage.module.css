@@ -1,0 +1,50 @@
+.container {
+    width: 100%;
+    background: url("../../assets/images/header-bg.jpg") no-repeat;
+    height: 600px;
+    background-size: 100%;
+    font-size: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container span {
+    width: 65%;
+    font-weight: 700;
+    color: #fefefe;
+    text-align: center;
+    line-height: 100px;
+}
+
+.service_container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 324px);
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service_el {
+    width: 100%;
+    height: max-content;
+    position: relative;
+}
+
+.service_img {
+    width: 100%;
+    height: 369px;
+    border-radius: 30px;
+}
+
+.service_text {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
